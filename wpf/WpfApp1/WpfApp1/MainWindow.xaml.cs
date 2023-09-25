@@ -56,7 +56,7 @@ namespace WpfApp1
                     }
                 }
 
-                if (minIndex < _array.Length - 1) // Если минимальный элемент не последний в массиве
+                if (minIndex < _array.Length - 1) 
                 {
                     Array.Sort(_array, minIndex + 1, _array.Length - minIndex - 1);
                     Array.Reverse(_array, minIndex + 1, _array.Length - minIndex - 1);
@@ -69,7 +69,7 @@ namespace WpfApp1
                 }
                 else
                 {
-                    MessageBox.Show("Сортировка не возможна, так как минимальный элемент находится в конце массива или перед ним нет других элементов.");
+                    MessageBox.Show("Сортування неможливе, оскільки мінімальний елемент знаходиться в кінці масиву або перед ним немає інших елементів.");
                 }
             }
             else

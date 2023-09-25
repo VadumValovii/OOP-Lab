@@ -3,11 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Array Operations" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="inputBox" HorizontalAlignment="Left" Height="23" Margin="150,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="inputBox" HorizontalAlignment="Left" Height="23" Margin="281,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Введіть кількість елементів масиву (n):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30,0,0"/>
-        <Button Content="Generate Array" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="290,30,0,0" Click="OnGenerateArrayClicked"/>
+        <Button Content="Згенерувати масив" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="406,30,0,0" Click="OnGenerateArrayClicked"/>
         <ListBox x:Name="arrayList" HorizontalAlignment="Left" Height="200" Margin="10,70,0,0" VerticalAlignment="Top" Width="770"/>
         <TextBlock x:Name="sumTextBlock" HorizontalAlignment="Left" Margin="10,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Button Content="Sort Array" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="290,320,0,0" Click="OnSortArrayClicked"/>
+        <Button Content="сортувати масив" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="290,320,0,0" Click="OnSortArrayClicked"/>
     </Grid>
 </Window>
