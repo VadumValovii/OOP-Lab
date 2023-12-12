@@ -1,7 +1,0 @@
-D:\Універ\OOP-LAB\OOPLab1\OOPLab1\bin\Debug\OOPLab1.exe.config
-D:\Універ\OOP-LAB\OOPLab1\OOPLab1\bin\Debug\OOPLab1.exe
-D:\Універ\OOP-LAB\OOPLab1\OOPLab1\bin\Debug\OOPLab1.pdb
-D:\Універ\OOP-LAB\OOPLab1\OOPLab1\obj\Debug\OOPLab1.csproj.AssemblyReference.cache
-D:\Універ\OOP-LAB\OOPLab1\OOPLab1\obj\Debug\OOPLab1.csproj.CoreCompileInputs.cache
-D:\Універ\OOP-LAB\OOPLab1\OOPLab1\obj\Debug\OOPLab1.exe
-D:\Універ\OOP-LAB\OOPLab1\OOPLab1\obj\Debug\OOPLab1.pdb
