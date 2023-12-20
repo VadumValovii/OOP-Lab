@@ -1,0 +1,11 @@
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\bin\Debug\net8.0\VehicleLibrary.deps.json
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\bin\Debug\net8.0\VehicleLibrary.dll
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\bin\Debug\net8.0\VehicleLibrary.pdb
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\obj\Debug\net8.0\VehicleLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\obj\Debug\net8.0\VehicleLibrary.AssemblyInfoInputs.cache
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\obj\Debug\net8.0\VehicleLibrary.AssemblyInfo.cs
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\obj\Debug\net8.0\VehicleLibrary.csproj.CoreCompileInputs.cache
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\obj\Debug\net8.0\VehicleLibrary.dll
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\obj\Debug\net8.0\refint\VehicleLibrary.dll
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\obj\Debug\net8.0\VehicleLibrary.pdb
+D:\Універ\OOP-LAB\OOPLab8\ConsoleApp1\VehicleLibrary\obj\Debug\net8.0\ref\VehicleLibrary.dll
