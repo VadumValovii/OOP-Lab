@@ -1,0 +1,15 @@
+﻿<Window x:Class="QuadraticEquationSolver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Розв'язання квадратного рівняння" Height="300" Width="400">
+    <Grid Margin="10">
+        <TextBox x:Name="TextBoxA" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Text="" />
+        <TextBox x:Name="TextBoxB" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" Text="" />
+        <TextBox x:Name="TextBoxC" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0" Text="" />
+
+        <Button Content="Обчислити" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="10,130,0,0" Click="OnCalculateClick" />
+
+        <TextBlock x:Name="DiscriminantLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,170,0,0" />
+        <TextBlock x:Name="RootsLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,200,0,0" />
+    </Grid>
+</Window>
