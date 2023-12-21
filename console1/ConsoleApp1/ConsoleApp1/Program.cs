@@ -8,6 +8,12 @@ namespace ConsoleApp1
 {
     class Program
     {
+        static void Swap(ref double e1, ref double e2)
+        {
+            var temp = e1;
+            e1 = e2;
+            e2 = temp;
+        }
         static void Main(string[] args)
         {
             Console.Write("Введіть кількість елементів масиву (n): ");
@@ -16,10 +22,10 @@ namespace ConsoleApp1
             Random rnd = new Random();
             double[] arr = new double[n];
 
-            // Генерація масиву
+           
             for (int i = 0; i < n; i++)
             {
-                arr[i] = Math.Round(rnd.NextDouble() * (3.59 - (-7.51)) + (-7.51), 2);
+                arr[i] = Math.Round(rnd.NextDouble() * (12.91 - (-28.35)) + (-28.35), 2);
             }
 
             Console.WriteLine("Початковий масив:");
@@ -27,31 +33,30 @@ namespace ConsoleApp1
             Console.ReadLine();
 
             // Завдання 1
-            double sum = 0;
-            foreach (double num in arr)
+            double dobutok = 1;
+            for(int i = 0; i <n; i++)
             {
-                if (num - Math.Truncate(num) < 0.5)
+                if (arr[i] < 0)
                 {
-                    sum += Math.Abs(num);
+                    dobutok *= i;
                 }
             }
-            Console.WriteLine("\nСума модулів елементів з дробовою частиною меншою за 0.5: " + sum);
+            Console.WriteLine("\nДобуток індексів від’ємних елементів: " + dobutok);
 
             // Завдання 2
-            double min = arr[0];
-            int minIndex = 0;
-            for (int i = 1; i < n; i++)
+            var len = arr.Length;
+            for (var i = 1; i < len; i++)
             {
-                if (arr[i] < min)
+                for (var j = 0; j < len - i; j++)
                 {
-                    min = arr[i];
-                    minIndex = i;
+                    if (arr[j] < arr[j + 1])
+                    {
+                        Swap(ref arr[j], ref arr[j + 1]);
+                    }
                 }
             }
-
-            Array.Sort(arr, minIndex + 1, n - minIndex - 1);
-            Array.Reverse(arr, minIndex + 1, n - minIndex - 1);
-            Console.WriteLine("\nМасив після впорядкування елементів після мінімального елементу за спаданням:");
+         
+            Console.WriteLine("\nМасив після впорядкування  елементів за спаданням їх значень.:");
             Console.WriteLine(string.Join(", ", arr));
             Console.ReadLine();
 

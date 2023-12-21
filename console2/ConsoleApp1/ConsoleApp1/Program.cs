@@ -24,7 +24,7 @@ namespace ConsoleApp1
             {
                 for (int j = 0; j < m; j++)
                 {
-                    double number = Math.Round((rnd.Next(-4231, 704) + rnd.NextDouble()), 2);
+                    double number = Math.Round((rnd.Next(-249, 603) + rnd.NextDouble()), 2);
                     array[i, j] = number;
                 }
             }
@@ -51,32 +51,66 @@ namespace ConsoleApp1
             }
             Console.WriteLine($"Кількість рядків, які не містять жодного від’ємного елемента: {positiveRowCount}");
 
-            // Поміняти порядок слідування елементів у стовпцях на протилежний
-            double[,] reversedArray = new double[n, m];
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < m; j++)
-                {
-                    reversedArray[i, j] = array[n - i - 1, j];
-                }
-            }
+            // Переставлення рядків за спаданням сум елементів у рядках
+            SortRowsBySum(array, n, m);
 
-            // Виведення масиву після зміни порядку слідування елементів у стовпцях
-            Console.WriteLine("Масив після зміни порядку слідування елементів у стовпцях:");
-            PrintArray(reversedArray, n, m);
+            Console.WriteLine("Масив після перестановки рядків за спаданням сум:");
+            PrintArray(array,n,m);
         }
 
-        static void PrintArray(double[,] array, int n, int m)
+        // Метод для перестановки рядків за спаданням сум елементів у рядках
+        static void SortRowsBySum(double[,] array, int n, int m)
+        {
+            double[] rowSums = new double[n];
+
+            // Обчислення сум елементів у кожному рядку
+            for (int i = 0; i < n; i++)
+            {
+                double rowSum = 0;
+                for (int j = 0; j < m; j++)
+                {
+                    rowSum += array[i, j];
+                }
+                rowSums[i] = rowSum;
+            }
+
+            // Сортування рядків за спаданням сум
+            for (int i = 0; i < n - 1; i++)
+            {
+                for (int j = i + 1; j < n; j++)
+                {
+                    if (rowSums[j] > rowSums[i])
+                    {
+                        // Обмін рядків
+                        for (int k = 0; k < m; k++)
+                        {
+                            double temp = array[i, k];
+                            array[i, k] = array[j, k];
+                            array[j, k] = temp;
+                        }
+
+                        // Обмін сум
+                        double tempSum = rowSums[i];
+                        rowSums[i] = rowSums[j];
+                        rowSums[j] = tempSum;
+                    }
+                }
+            }
+        }
+
+        // Метод для виведення масиву на екран
+        static void PrintArray(double[,] array,int n,int m)
         {
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)
                 {
-                    Console.Write($"{array[i, j],7} ");
+                    Console.Write(array[i, j] + " ");
                 }
                 Console.WriteLine();
-                Console.ReadLine();
             }
+            Console.WriteLine();
         }
+       
     }
 }
